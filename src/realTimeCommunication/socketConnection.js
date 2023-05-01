@@ -15,7 +15,7 @@ let socket = null;
 
 export const connectWithSocketServer = (userDetails) => {
   const token = userDetails.token;
-  const url = `http://192.168.231.165:8080?token=${token}`;
+  const url = `https://6163-2402-3a80-893-d836-258b-d8e8-587e-82fd.ngrok-free.app?token=${token}`;
 
   socket = io(url);
 

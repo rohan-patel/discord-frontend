@@ -4,7 +4,8 @@ import { logout } from "./shared/utils/auth";
 const config = { withCredentials: true };
 
 const apiClient = axios.create({
-  baseURL: "http://localhost:8082/discord-clone/api",
+  baseURL:
+    "https://ec3f-2402-3a80-893-d836-258b-d8e8-587e-82fd.ngrok-free.app/discord-clone/api",
   timeout: 3600000,
 });
 
