@@ -22,7 +22,7 @@ const Dashboard = ({ setUserDetails, test }) => {
     if (!userDetails) {
       logout();
     } else {
-      // test();
+      test();
       setUserDetails(JSON.parse(userDetails));
       connectWithSocketServer(JSON.parse(userDetails));
     }
