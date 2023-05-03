@@ -18,15 +18,7 @@ export const connectWithSocketServer = (userDetails) => {
   const token = userDetails.token;
   const url = `${socketUrl}?token=${token}`;
 
-  socket = io(url, {
-    transportOptions: {
-      polling: {
-        extraHeaders: {
-          "ngrok-skip-browser-warning": true,
-        },
-      },
-    },
-  });
+  socket = io(url);
 
   socket.on("connect", () => {
     console.log("Successfully connected with SocketIO Server");

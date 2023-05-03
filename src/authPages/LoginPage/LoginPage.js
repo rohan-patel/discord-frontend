@@ -8,6 +8,7 @@ import { validateLoginForm } from "../../shared/utils/validators";
 import { connect } from "react-redux";
 import { getActions } from "../../store/actions/authAction";
 import { useNavigate } from "react-router-dom";
+import NgrokDialog from "../../shared/components/NgrokDialog";
 
 const LoginPage = ({ login }) => {
   const navigate = useNavigate();
@@ -47,6 +48,7 @@ const LoginPage = ({ login }) => {
         handleLogin={handleLogin}
         tooltipMessage={tooltipMessage}
       />
+      <NgrokDialog />
     </AuthBox>
   );
 };
