@@ -10,6 +10,7 @@ const apiClient = axios.create({
 });
 
 apiClient.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
+apiClient.defaults.headers.common["ngrok-skip-browser-warning"] = "true";
 
 apiClient.interceptors.request.use(
   (config) => {
