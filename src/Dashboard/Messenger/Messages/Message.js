@@ -47,7 +47,7 @@ const Message = ({ content, sameAuthor, username, date, sameDay }) => {
       </AvatarContainer>
       <MessageContainer>
         <Typography style={{ fontSize: "16px", color: "white" }}>
-          {username}
+          {username}{" "}
           <span style={{ fontSize: "12px", color: "#72767d" }}>{date}</span>
         </Typography>
         <MessageContent>{content}</MessageContent>
