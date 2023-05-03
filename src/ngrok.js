@@ -1,4 +1,4 @@
 export const apiUrl =
-  "https://7bfb-2402-3a80-8b9-741c-cc1c-85b1-3b56-54e2.ngrok-free.app";
+  "https://87de-2402-3a80-150d-7920-3922-f057-b673-aa19.ngrok-free.app";
 export const socketUrl =
-  "https://639b-2402-3a80-8b9-741c-cc1c-85b1-3b56-54e2.ngrok-free.app";
+  "https://2068-2402-3a80-150d-7920-3922-f057-b673-aa19.ngrok-free.app";
