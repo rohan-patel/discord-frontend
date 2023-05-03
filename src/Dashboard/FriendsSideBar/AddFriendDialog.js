@@ -34,10 +34,10 @@ const AddFriendDialog = ({
     setEmail("");
   };
 
-  useEffect(() => {
-    setIsFormValid(validateEmail(email));
-    // console.log(email);
-  }, [email, setIsFormValid]);
+  // useEffect(() => {
+  //   setIsFormValid(validateEmail(email));
+  //   // console.log(email);
+  // }, [email, setIsFormValid]);
 
   return (
     <div>
@@ -62,7 +62,7 @@ const AddFriendDialog = ({
         <DialogActions>
           <CustomPrimaryButton
             onClick={handleSendInvitation}
-            disabled={!isFormValid}
+            disabled={email === ""}
             label="Send"
             additionalStyles={{
               marginLeft: "15px",
