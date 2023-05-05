@@ -26,6 +26,17 @@ const convertDateToHumanReadable = (date, format) => {
 
 const Messages = ({ chosenChatDetails, messages, friends, chatType }) => {
   // console.log(chatType);
+
+  const messagesEndRef = useRef(null);
+
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
+
   return (
     <MainContainer>
       <MessagesHeader name={chosenChatDetails?.name} type={chatType} />
@@ -93,6 +104,7 @@ const Messages = ({ chosenChatDetails, messages, friends, chatType }) => {
           </div>
         );
       })}
+      <div ref={messagesEndRef} />
     </MainContainer>
   );
 };
